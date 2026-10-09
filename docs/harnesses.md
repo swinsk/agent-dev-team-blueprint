@@ -37,7 +37,7 @@ Running with Claude Opus 5.5: the generated agents carry no `model` line, so the
 
 Topology on Copilot: whether a custom agent can invoke other custom agents as subagents depends on the surface and its `agent` tool support. If your surface supports it, select `dev-manager` and let it invoke the others. If it does not, use the **flattened topology** in `README.md`: you act as the orchestrator, and you run each role in turn by selecting its agent (or assigning the issue to it), with `dev-manager` as the session that reviews and decides.
 
-Adapters: `.github/agents/<role>.agent.md` (including an `orchestrator` agent), `.github/copilot-instructions.md`, `.github/prompts/*.prompt.md`.
+Adapters: `.github/agents/<role>.agent.md` (the six team roles only; there is deliberately NO orchestrator agent, because your existing main assistant is the orchestrator, see `INSTALL.md`), `.github/copilot-instructions.md`, `.github/prompts/*.prompt.md`.
 
 ## OpenAI Codex
 

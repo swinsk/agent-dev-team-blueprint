@@ -2,6 +2,9 @@
 
 A harness-neutral blueprint for running an **autonomous AI software development team**: an orchestrator, a dev manager who is also the chief architect, a product manager, backend and frontend/mobile developers, QA, and a release manager, plus the rules and patterns that let them build and ship approved work without a human steering every step.
 
+> **Installing? Read [`INSTALL.md`](INSTALL.md) first.** Your existing main assistant (for example "Jarvis") becomes the orchestrator. The install never creates a second orchestrator or primary assistant and never overwrites your existing agents.
+
+
 It is extracted from a setup that has shipped real epics end to end (backend deploys, mobile builds to test groups, data migrations) under these rules, then generalized. Every rule here exists because something broke without it. The deepest material is about the **dev manager**, because that role is what makes the whole thing work, and it is the role that failed in the most instructive ways.
 
 Docs and agent definitions only. No product code, no infrastructure scripts: the supporting machinery (run queue, usage guard, resume watcher, occupancy lock, heartbeat) is described as patterns with small illustrative snippets.

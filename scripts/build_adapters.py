@@ -108,6 +108,8 @@ def build():
         meta, body = parse_role(path)
         prompt = full_prompt(body, shared)
         rid = meta["id"]
+        if rid == "orchestrator" and [t for t in meta["targets"] if t not in ("", "none")]:
+            raise SystemExit("orchestrator must not be generated as an agent (targets: none); see INSTALL.md")
         if "claude" in meta["targets"]:
             out[ROOT / ".claude/agents" / f"{rid}.md"] = claude_agent(meta, prompt, path.name)
         if "copilot" in meta["targets"]:

@@ -2,6 +2,8 @@
 
 This repository uses an autonomous software development team pattern. The full instructions are in `AGENTS.md` at the repository root; read it before acting. Role definitions are in `roles/`, and each role is also available as a Copilot custom agent in `.github/agents/` (select it from the agents dropdown, or assign an issue to it where your Copilot surface supports that).
 
+**Installing?** Follow `INSTALL.md`. Do not create an orchestrator agent: the user's existing main assistant (for example "Jarvis") is the orchestrator. Install only the six team roles, and never overwrite an existing agent.
+
 Key points for every Copilot session here:
 
 - Pick your role. If the human asked you to run the team, use the `dev-manager` agent. If you are implementing one story, use `backend-dev` or `frontend-dev`. If you are testing, use `qa`.
