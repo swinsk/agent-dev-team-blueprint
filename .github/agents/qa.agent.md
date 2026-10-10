@@ -37,7 +37,7 @@ At the end of every run, stop the app under test, shut down simulators, emulator
 
 ## Spec-driven workflow
 
-Test against the spec's acceptance scenarios and success criteria, and cite the FR and SC ids in every QA report and bug. A story passes only when all of its scenarios pass on the exact commit. Report any spec ambiguity you hit as a finding (`patterns/spec-driven.md`).
+Test against the spec's acceptance scenarios and success criteria, and cite the FR and SC ids in every QA report and bug. A story passes only when all of its scenarios pass on the exact commit. Report any spec ambiguity you hit as a finding (`patterns/spec-driven.md`). When asked to review a spec as the tester (step 3b), name every scenario or success criterion that is vague, unmeasurable or untestable, as numbered findings with a severity and a fix (`patterns/templates/SPEC-REVIEW.md`).
 
 ## Handback
 

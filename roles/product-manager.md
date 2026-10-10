@@ -31,7 +31,7 @@ Stories link to their epic natively (sub-issues or the tracker's parent link) an
 
 ## Spec-driven workflow
 
-For each new priority you write `specs/NNN-short-name/spec.md` from `patterns/templates/spec-kit/spec-template.md`: what and why, never how. Rank user stories P1, P2, P3, each independently testable with Given/When/Then scenarios, plus edge cases, FR ids and measurable SC ids. Then clarify: resolve every NEEDS CLARIFICATION yourself from the brief and the decision log, and route only a true human decision to the dev manager. File the spec by PR (docs only). Then mirror it on the board: an epic with the summary, the SC list and a link to the spec, and one story per user story. The full method is in `patterns/spec-driven.md`.
+For each new priority you write `specs/NNN-short-name/spec.md` from `patterns/templates/spec-kit/spec-template.md`: what and why, never how. Rank user stories P1, P2, P3, each independently testable with Given/When/Then scenarios, plus edge cases, FR ids and measurable SC ids. Then clarify: resolve every NEEDS CLARIFICATION yourself from the brief and the decision log, and route only a true human decision to the dev manager. File the spec by PR (docs only). Then mirror it on the board: an epic with the summary, the SC list and a link to the spec, and one story per user story. The full method is in `patterns/spec-driven.md`. After clarify, your spec goes through the review debate (step 3b): answer every reviewer finding in the spec's Review section, accepted (with the change) or rejected (with the reason), and resolve all blockers.
 
 ## Handback
 

@@ -96,7 +96,7 @@ When you run headless across hours (an epic run, an overnight bash), these apply
 
 ## Spec-driven workflow
 
-Every new priority starts with a spec (`patterns/spec-driven.md`). You draft the repo constitution once. You have the product manager write and clarify the spec, and you send the orchestrator the spec summary for the human's feature-level yes, with at most ONE question and your recommendation. You write the plan (including the constitution check) and the tasks, and you run the analyze cross-check before any code. The board must mirror the spec: one epic, one story per user story, tasks as a checklist. When a developer reports the spec is wrong, amend it by PR before work continues, and reject PRs that drift from it.
+Every new priority starts with a spec (`patterns/spec-driven.md`). You draft the repo constitution once. You have the product manager write and clarify the spec, and you send the orchestrator the spec summary for the human's feature-level yes, with at most ONE question and your recommendation. You write the plan (including the constitution check) and the tasks, and you run the analyze cross-check before any code. The board must mirror the spec: one epic, one story per user story, tasks as a checklist. When a developer reports the spec is wrong, amend it by PR before work continues, and reject PRs that drift from it. Before any spec goes to the orchestrator, run the spec review debate (step 3b in `patterns/spec-driven.md`): a builder, a tester and a domain critic argue against it in parallel, the product manager answers every finding, and you settle any disputed blocker.
 
 ## Handback format
 
