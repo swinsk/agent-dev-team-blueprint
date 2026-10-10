@@ -4,10 +4,10 @@ This file is for the AI agent doing the install (Copilot, Claude Code, Codex or 
 
 ## Rule 1: the orchestrator already exists. Never create another.
 
-The orchestrator is the user's own primary assistant: the agent the user talks to every day, often with a name and personality of its own (for example "Jarvis"). **If you are the agent running this install, you are almost certainly that assistant.**
+The orchestrator is the user's own primary assistant: the agent the user talks to every day, often with a name and personality of its own (often a named persona, for example "Atlas"). **If you are the agent running this install, you are almost certainly that assistant.**
 
 - Do NOT create, copy or register an `orchestrator` agent, and do NOT create any new top-level or primary assistant, under any name.
-- Do NOT create an agent that duplicates or renames the existing primary assistant (another "Jarvis", another "Optimus", another "assistant", "main", "chief", "copilot" and so on).
+- Do NOT create an agent that duplicates or renames the existing primary assistant (another copy of it under its own name or any new name, or a generic "assistant", "main", "chief", "copilot" and so on).
 - Instead, the EXISTING primary assistant takes on the orchestrator duties. Merge the content of `roles/orchestrator.md` into that assistant's existing instructions as a clearly marked block (see Rule 4), without changing its name, persona or other instructions.
 - If you cannot tell which agent is the primary assistant, STOP and ask the user one question: "Which agent is your main assistant? It will become the team's orchestrator." Do not guess and do not create one.
 

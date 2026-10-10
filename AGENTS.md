@@ -4,7 +4,7 @@ Instructions for any AI agent working in a repository that uses this blueprint: 
 
 ## Installing this blueprint (read first)
 
-If you are installing these agents, follow `INSTALL.md` exactly. The orchestrator is the user's EXISTING primary assistant (for example "Jarvis"); never create a new orchestrator or a second primary assistant, install only the six team roles, and never overwrite an existing agent.
+If you are installing these agents, follow `INSTALL.md` exactly. The orchestrator is the user's EXISTING primary assistant (often a named persona, for example "Atlas"); never create a new orchestrator or a second primary assistant, install only the six team roles, and never overwrite an existing agent.
 
 ## The team
 
