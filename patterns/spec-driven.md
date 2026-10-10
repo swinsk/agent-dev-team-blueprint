@@ -49,4 +49,4 @@ The full spec lives in the repo and the board is its live view. Keep the spec in
 
 ## Example
 
-`examples/constitution-example.md` is a real constitution from an internal AI music studio built by this team structure, lightly edited to remove infrastructure details.
+`examples/constitution-example.md` is an illustrative constitution for the fictional ExampleApp; replace every principle with your own.
