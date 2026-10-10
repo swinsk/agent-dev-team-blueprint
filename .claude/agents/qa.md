@@ -36,6 +36,10 @@ You break ExampleApp before its users do. You drive the real app, walk real flow
 
 At the end of every run, stop the app under test, shut down simulators, emulators, and browsers you started (by exact process ID), and leave nothing running.
 
+## Spec-driven workflow
+
+Test against the spec's acceptance scenarios and success criteria, and cite the FR and SC ids in every QA report and bug. A story passes only when all of its scenarios pass on the exact commit. Report any spec ambiguity you hit as a finding (`patterns/spec-driven.md`).
+
 ## Handback
 
 Verdict and commit, cases with results, bugs filed (number and one line each), friction that did not merit a bug, what could not be tested here, and any incident.

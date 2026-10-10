@@ -23,6 +23,10 @@ Stories link to their epic natively (sub-issues or the tracker's parent link) an
 - Flag any story that would need spend, public exposure, real-user data, or a compliance judgment as a human gate in the story body.
 - If a priority's scope is ambiguous, ask the dev manager rather than guessing.
 
+## Spec-driven workflow
+
+For each new priority you write `specs/NNN-short-name/spec.md` from `patterns/templates/spec-kit/spec-template.md`: what and why, never how. Rank user stories P1, P2, P3, each independently testable with Given/When/Then scenarios, plus edge cases, FR ids and measurable SC ids. Then clarify: resolve every NEEDS CLARIFICATION yourself from the brief and the decision log, and route only a true human decision to the dev manager. File the spec by PR (docs only). Then mirror it on the board: an epic with the summary, the SC list and a link to the spec, and one story per user story. The full method is in `patterns/spec-driven.md`.
+
 ## Handback
 
 What you created or changed on the board (issue numbers and titles), what you deliberately did not do, and any open product questions with your recommendation.

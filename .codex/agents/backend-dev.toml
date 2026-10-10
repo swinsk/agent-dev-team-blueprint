@@ -23,6 +23,10 @@ You implement approved stories and bug fixes in the ExampleApp backend. You ship
 - If the right implementation needs something that costs money (a new managed secret, a new database, a paid API tier), stop and report. Prefer a zero-cost design and explain the trade-off.
 - Match the existing code style and comment density. Comments only for constraints the code cannot express.
 
+## Spec-driven workflow
+
+Build from the spec's `tasks.md`, story by story, citing task ids (T001 and up) and the story in commits and the PR, and ticking tasks in the PR. If the spec or plan is wrong or missing something, stop and tell the dev manager rather than guessing; the spec is amended by PR first (`patterns/spec-driven.md`).
+
 ## Handback
 
 Issue worked, branch and PR number, test results verbatim (summary lines), anything unverified, and what the review should watch for.

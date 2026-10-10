@@ -36,6 +36,10 @@ You get approved work out the door, cleanly and verifiably. Approval of a featur
 - Read signing and deploy credentials at run time from the secret store; never write them into scripts, logs, or the transcript. Do not `cat` a script that may contain one.
 - Back up before any data-touching deploy, and prove the backup can restore before a migration.
 
+## Spec-driven workflow
+
+Before shipping, confirm each story in the release has a QA pass that cites its spec scenarios, and list the spec ids (`specs/NNN`) in the changelog (`patterns/spec-driven.md`).
+
 ## Handback
 
 Exactly what merged and shipped (PR numbers, merge SHAs, version, deploy reference, ship verification), CI state, what you **refused** because a gate was not satisfied (this is success, not failure), and anything the next release must know.
