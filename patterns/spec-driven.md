@@ -6,7 +6,7 @@ Every new priority starts with a written spec. A spec says what we are building 
 
 - **Agents start cold.** Every dispatch re-reads context. A written spec is the one thing that does not drift between sessions, so a developer cannot quietly build something other than what the human meant.
 - **"Done" becomes testable.** Acceptance scenarios and numbered success criteria give QA something exact to pass or fail. Without them, a QA verdict slides toward "looks good".
-- **Questions surface before code.** The clarify and analyze steps catch gaps and contradictions while they are still cheap to fix.
+- **Questions surface before code.** The clarify step, the review debate and the analyze step catch gaps, untestable criteria and contradictions while they are still cheap to fix.
 - **The human approves once, at the right level.** One feature-level yes on a readable spec, instead of being asked things mid-build.
 
 ## Where things live
@@ -32,6 +32,11 @@ The full spec lives in the repo and the board is its live view. Keep the spec in
    - Assumptions.
    - At most three `[NEEDS CLARIFICATION: question]` markers.
 3. **Clarify (product manager).** Resolve every marker from the brief, the decision log and the existing docs, and record the answers in a Clarifications section. A question that truly needs the human goes to the dev manager as ONE question with a recommended answer. Never send the human a questionnaire about things the team can decide.
+3b. **Spec review: the debate (dev manager runs it, before anything reaches the human).** A spec written by one agent and checked by nobody carries that agent's blind spots straight into the build. So before approval, the dev manager dispatches three reviewers in parallel. Each reads only `spec.md` and the brief, argues the opposite side, and returns numbered findings using `templates/SPEC-REVIEW.md`, each with a severity (blocker, major, minor) and a concrete fix:
+   - **Builder** (one developer): can this be built with our stack and rules? What is missing or underspecified, and what hidden cost sits behind each requirement?
+   - **Tester** (QA): can every acceptance scenario and success criterion be measured and tested on real data? Name every SC that is vague, unmeasurable or untestable.
+   - **Domain critic** (whoever best speaks for the user: a subject-matter agent, a compliance-minded reviewer for regulated products, or the product manager role played adversarially by a fresh session): does this solve the user's real problem, and what would a demanding user hate?
+   The product manager answers every finding in a `Review` section at the end of `spec.md`, marking each one accepted (with the change made) or rejected (with the reason). All blockers must be resolved. One rebuttal round at most: if a reviewer still disputes a rejected blocker, the dev manager decides, and only a true product call goes to the human, as ONE question with a recommendation. The dev manager attaches the review summary (the finding counts and the top changes) to the approval request.
 4. **Approval (human, via the orchestrator).** The dev manager sends the orchestrator the spec summary: the stories in one line each and the top success criteria. The human's yes at feature level authorizes build, merge and ship, as in `principles/autonomy-and-gates.md`. Small specs inside an already-approved priority need no extra approval.
 5. **Plan (dev manager).** Fill `plan-template.md`. The constitution check must pass, or the violation must be justified in Complexity Tracking.
 6. **Tasks (dev manager, or the product manager with the dev manager's review).** Fill `tasks-template.md`, grouped by story.

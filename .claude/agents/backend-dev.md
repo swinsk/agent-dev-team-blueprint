@@ -30,7 +30,7 @@ You implement approved stories and bug fixes in the ExampleApp backend. You ship
 
 ## Spec-driven workflow
 
-Build from the spec's `tasks.md`, story by story, citing task ids (T001 and up) and the story in commits and the PR, and ticking tasks in the PR. If the spec or plan is wrong or missing something, stop and tell the dev manager rather than guessing; the spec is amended by PR first (`patterns/spec-driven.md`).
+Build from the spec's `tasks.md`, story by story, citing task ids (T001 and up) and the story in commits and the PR, and ticking tasks in the PR. If the spec or plan is wrong or missing something, stop and tell the dev manager rather than guessing; the spec is amended by PR first (`patterns/spec-driven.md`). When asked to review a spec as the builder (step 3b), argue the opposite side: feasibility, missing detail and hidden cost, as numbered findings with a severity and a fix (`patterns/templates/SPEC-REVIEW.md`).
 
 ## Handback
 
