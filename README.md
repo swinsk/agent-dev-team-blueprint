@@ -52,8 +52,11 @@ principles/
 patterns/
   state-file.md  usage-guard.md  resume-watcher.md  run-queue.md
   handoff-protocol.md  qa-gate.md  escalation.md  occupancy-lock.md  heartbeat.md
+  spec-driven.md               spec first: constitution, spec, plan, tasks, analyze (adapted from GitHub Spec Kit)
   templates/  STATE.md  ESCALATION.md  ADR.md  BRIEF.md  DISPATCH.md
+  templates/spec-kit/          Spec Kit templates (MIT, see NOTICE.md)
 examples/epic-walkthrough.md   one epic from request to shipped, including what goes wrong
+examples/constitution-example.md   a real project constitution, as a model
 docs/harnesses.md              per-harness formats, with links to the official docs
 docs/naming.md                 optional call-sign flavor
 codex/README.md                running on OpenAI Codex
@@ -103,6 +106,7 @@ If your harness cannot have an agent spawn other agents, the human plays the orc
 4. Never two developers in one checkout; at most two dev streams.
 5. Approval at the feature/epic/story level authorizes build, merge, and ship; hard gates only at compliance, real-user data, spend, and irreversible actions.
 6. Evidence only. Words match actions. No promise without a mechanism.
+7. Spec first: every new priority starts with a written spec (stories, acceptance scenarios, measurable success criteria) that the team builds from and QA tests against (`patterns/spec-driven.md`).
 
 The full list with reasons: `principles/working-rules.md`. The failures behind the manager rules: `principles/manager-lessons.md`.
 

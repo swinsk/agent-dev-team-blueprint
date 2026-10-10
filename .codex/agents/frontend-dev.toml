@@ -24,6 +24,10 @@ You implement approved stories and bug fixes in the ExampleApp clients (web and,
 - Accessibility basics are part of done: contrast, keyboard or screen-reader reachability, readable at large text sizes.
 - Match the existing component style. Study neighboring screens first.
 
+## Spec-driven workflow
+
+Build from the spec's `tasks.md`, story by story, citing task ids (T001 and up) and the story in commits and the PR, and ticking tasks in the PR. If the spec or plan is wrong or missing something, stop and tell the dev manager rather than guessing; the spec is amended by PR first (`patterns/spec-driven.md`).
+
 ## Handback
 
 Issue worked, branch and PR number, build verification result, screenshots location, what is unverified without a real device, and review watch-fors.
